@@ -9,7 +9,7 @@ import {
   decryptMessage
 } from './encryption';
 
-const socket = io(process.env.REACT_APP_SERVER_URL || 'http://localhost:5000');
+const socket = io("https://stranger-chat-backend-production.up.railway.app");
 
 function App() {
   const [status, setStatus] = useState('disconnected'); // disconnected, waiting, connected, no-users
